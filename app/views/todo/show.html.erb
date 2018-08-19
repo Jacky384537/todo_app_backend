@@ -3,6 +3,6 @@
      <h2><%=@t.description%></h2> <input type ="checkbox"><br>
         <p><%=@t.description%>. I have to finish this by <%=@t.pomodoros_estimate%> pomodoros</p>
         <a href="/todos">Back</a>
-        <a href="#">Edit</a>
-        <a href="#">Delete</a>
+        <a href="/todo/edit/<%=@t.id%>">Edit</a>
+        <a href="/todo/destroy/<%=@t.id%>">Delete</a>
 </html>
