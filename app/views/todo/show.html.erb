@@ -1,8 +1,7 @@
  <html>
-     <h1>Todo #<%=params[:id]%></h1>
-     <h2><%=@todo_description%></h2> <input type ="checkbox"><br>
-        <p><%=@todo_description%>. I have to finish this by <%=@todo_pomodoro_estimate%> pomodoros</p>
-        <p> pomodoros</p>
+     <h1>Todo #<%=@t.id%></h1>
+     <h2><%=@t.description%></h2> <input type ="checkbox"><br>
+        <p><%=@t.description%>. I have to finish this by <%=@t.pomodoros_estimate%> pomodoros</p>
         <a href="/todos">Go back</a>
         <a href="#">Edit</a>
         <a href="#">Delete</a>
